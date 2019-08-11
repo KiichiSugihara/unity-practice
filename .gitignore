@@ -34,3 +34,10 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+# mac
+.DS_Store
+
+
+#build
+Roulette_iOS/
