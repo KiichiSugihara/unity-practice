@@ -29,6 +29,11 @@ public class ArrowController : MonoBehaviour
     float r2 = 1.0f;
     if (d < r1 + r2)
     {
+      //notice collision
+      GameObject director = GameObject.Find("GameDirector");
+      director.GetComponent<GameDirector>().DecreaseHp();
+
+      // delete arrow
       Destroy(gameObject);
     }
   }
