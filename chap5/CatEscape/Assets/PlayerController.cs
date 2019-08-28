@@ -9,19 +9,17 @@ public class PlayerController : MonoBehaviour
   {
 
   }
+  public void LButtonDown()
+  {
+    transform.Translate(-3, 0, 0);
+  }
+  public void RButtonDown()
+  {
+    transform.Translate(3, 0, 0);
+  }
 
   // Update is called once per frame
   void Update()
   {
-    // Then push left
-    if (Input.GetKeyDown(KeyCode.LeftArrow))
-    {
-      transform.Translate(-3, 0, 0);
-    }
-    // Then push right
-    if (Input.GetKeyDown(KeyCode.RightArrow))
-    {
-      transform.Translate(3, 0, 0);
-    }
   }
 }
