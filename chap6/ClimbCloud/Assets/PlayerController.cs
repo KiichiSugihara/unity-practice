@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerController : MonoBehaviour
 {
 
@@ -47,6 +48,10 @@ public class PlayerController : MonoBehaviour
 
     // change animation-speed
     this.animator.speed = speedx / 2.0f;
-
+  }
+  // reach goal
+  void OnTriggerEnter2D(Collider2D other)
+  {
+    Debug.Log("ゴール");
   }
 }
