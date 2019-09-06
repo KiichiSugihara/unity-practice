@@ -37,5 +37,11 @@ public class PlayerController : MonoBehaviour
       this.rigid2D.AddForce(transform.right * key * this.walkForce);
     }
 
+    // change direction
+    if (key != 0)
+    {
+      transform.localScale = new Vector3(key, 1, 1);
+    }
+
   }
 }
